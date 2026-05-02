@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>माधव जी डेयरी</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(green, darkgreen);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navbar */
+nav {
+    background: #222;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px gray;
+}
+
+/* Grid */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid .card {
+    flex: 1 1 200px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Form */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🐄 माधव जी डेयरी</h1>
+<p>शुद्ध और ताज़ा डेयरी उत्पाद</p>
+</header>
+
+<nav>
+<a href="#">होम</a>
+<a href="#products">प्रोडक्ट्स</a>
+<a href="#gallery">गैलरी</a>
+<a href="#contact">संपर्क</a>
+</nav>
+
+<section>
+<h2>हमारे बारे में</h2>
+<p>माधव जी डेयरी Malickpura में स्थित है और हम ताज़ा दूध, घी, पनीर और दही उपलब्ध कराते हैं।</p>
+</section>
+
+<section id="products">
+<h2>हमारे प्रोडक्ट्स</h2>
+
+<div class="grid">
+<div class="card">
+<h3>🥛 दूध</h3>
+<p>₹50 / लीटर</p>
+</div>
+
+<div class="card">
+<h3>🧈 देसी घी</h3>
+<p>₹800 / किलो</p>
+</div>
+
+<div class="card">
+<h3>🧀 पनीर</h3>
+<p>₹300 / किलो</p>
+</div>
+
+<div class="card">
+<h3>🍶 दही</h3>
+<p>₹60 / किलो</p>
+</div>
+</div>
+
+</section>
+
+<section id="gallery">
+<h2>गैलरी</h2>
+
+<div class="grid gallery">
+<div class="card"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1604908176997-4312d65e35d1"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da"></div>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>संपर्क करें</h2>
+
+<p>📞 9335263684</p>
+<p>📍 Malickpura</p>
+
+<a class="btn" href="https://wa.me/919335263684" target="_blank">
+📱 WhatsApp पर ऑर्डर करें
+</a>
+
+<h3>Message भेजें</h3>
+
+<form onsubmit="sendMsg(); return false;">
+<input type="text" placeholder="आपका नाम" required>
+<input type="text" placeholder="मोबाइल नंबर" required>
+<textarea placeholder="आपका संदेश"></textarea>
+<button class="btn">Send</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 माधव जी डेयरी</p>
+</footer>
+
+<script>
+function sendMsg(){
+    alert("धन्यवाद! आपका संदेश भेज दिया गया है 😊");
+}
+</script>
+
+</body>
+</html>
